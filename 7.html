@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++){
+        arr[i] = +prompt("Nhập số nguyên bất kì để lưu vào phần tử " + i + " của mảng:");
+    }
+    let V = +prompt("Nhập một phần tử để kiếm tra:");
+    function func(){
+        for (let i in arr){
+            if(V === arr[parseInt(i)]){
+                arr.splice(parseInt(i),1);
+                arr[arr.length] = 0;
+            }
+        }
+    }
+    func();
+    alert(arr)
+</script>
+</body>
+</html>

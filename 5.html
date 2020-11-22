@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let length = +prompt("Nhập độ dài mảng:");
+    for (let i = 0; i < length; i++){
+        arr[i] = +prompt("Nhập số nguyên bất kì để lưu vào phần tử " + i + " của mảng:");
+    }
+    let result = 0;
+    for (let i of arr){
+        if(i < 0){
+            result++;
+        }
+    }
+    alert("Chuỗi có " + result + " số nguyên âm")
+</script>
+</body>
+</html>

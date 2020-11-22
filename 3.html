@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1,2,3];
+    let max = a[0];
+    let avg = 0;
+
+    for (let i in a){
+        if (max < a[i]){
+            max = a[i];
+        }
+        avg += a[i];
+    }
+
+    alert("Phần tử có giá trị lớn nhất là " + max + "\n" + "Giá trị trung bình của các phần tử là " + (avg/a.length))
+</script>
+</body>
+</html>
